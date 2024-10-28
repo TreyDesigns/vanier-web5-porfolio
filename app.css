@@ -1,7 +1,7 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
 }
 
 html {
@@ -22,9 +22,10 @@ h1 {
 header {
     width: 100%;
     background-color: maroon;
-    height: 20%;
+    height: 150px;
     position: fixed;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    z-index: 10;
 }
 
 #logo {
@@ -67,16 +68,20 @@ div section img {
 footer {
     text-align: center;
 }
+
 /* work */
 #work {
-    margin-left: 50px;
-    margin-right: 50px;
+    margin: 0 auto;
+    position: relative;
+    max-width: 2000px;
     gap: 20% 20%;
-    width: 500px;
-    height: 500px;
+    width: 100%;
+    height: 100%;
     display: grid;
     grid-template-columns: auto auto auto;
 }
+
+
 
 #getInTouch {
     font-size: 50px;
@@ -94,7 +99,7 @@ footer {
 /* homepage */
 #homepage {
     background-color: aqua;
-    height: 100%;
+    height: auto;
 }
 
 main p {
@@ -102,7 +107,17 @@ main p {
     text-align: center;
 }
 
+#coverPic {
+   width: 100%;
+}
+
 /* about */
+#about {
+    margin: 0 auto;
+    position: relative;
+    max-width: 2000px;
+}
+
 #about p{
     margin-left: 50px;
     margin-bottom: 50px;
@@ -167,4 +182,8 @@ main h1{
     font-size: 50px;
     border-radius: 20px;
     background-color: brown;
+}
+
+#about, #contacts, #homepage, #workP {
+    padding-top: 250px;
 }
